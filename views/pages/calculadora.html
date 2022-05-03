@@ -4,7 +4,7 @@
 <head>
     <title>Calculadora</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
 </head>
 
 <body onkeypress="manipularTeclado()">
@@ -13,33 +13,32 @@
             <td colspan="6"><input type="text" id="display" value="0" disabled></td>
         </tr>
         <tr>
-            <td><input type="button" value="7" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="8" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="9" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="*" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" value="7" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="8" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="9" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="*" onclick="atualizarOperacao(this)" /></td>
         </tr>
         <tr>
-            <td><input type="button" value="4" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="5" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="6" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="-" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" value="4" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="5" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="6" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="-" onclick="atualizarOperacao(this)" /></td>
         </tr>
         <tr>
-            <td><input type="button" value="1" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="2" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="3" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="+" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" value="1" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="2" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="3" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="+" onclick="atualizarOperacao(this)" /></td>
         </tr>
         <tr>
-            <td><input type="button" value="C" onclick="limparDisplay()" /></td>
-            <td><input type="button" value="0" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" value="=" onclick="calcularOperacao()" /></td>
-            <td><input type="button" value="/" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" value="C" onclick="limparDisplay()" /></td>
+            <td><input type="button" class="button" value="0" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" value="=" onclick="calcularOperacao()" /></td>
+            <td><input type="button" class="button" value="/" onclick="atualizarOperacao(this)" /></td>
         </tr>
     </table>
 
-    <script src="js/calc_functions.js"></script>
-    <img src="img/dog.jpg" alt="Dog" />
+    <script src="../../public/js/calc_functions.js"></script>
 
 </body>
 
