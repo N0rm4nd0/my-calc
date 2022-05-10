@@ -13,34 +13,37 @@
             <td colspan="6"><input type="text" id="display" value="0" disabled></td>
         </tr>
         <tr>
-            <td><input type="button" class="button" value="(" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value=")" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="%" onclick="OperacaoRaiz(this)" /></td>
-            <td><input type="button" class="button" value="C" onclick="limparDisplay()" /></td>
+            <td><input type="button" class="button" id="value1" value="√" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" id="value2" value="^" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" id="value3" value="C" onclick="limparDisplay()" /></td>
         </tr>
         <tr>
-            <td><input type="button" class="button" value="7" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="8" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="9" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="/" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" id="value4" value="(" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value5" value=")" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value6" value="." onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value7" value="/" onclick="atualizarOperacao(this)" /></td>
         </tr>
         <tr>
-            <td><input type="button" class="button" value="4" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="5" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="6" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="*" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" id="value8" value="7" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value9" value="8" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value10" value="9" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value11" value="*" onclick="atualizarOperacao(this)" /></td>
         </tr>
         <tr>
-            <td><input type="button" class="button" value="1" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="2" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="3" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="-" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" id="value12" value="4" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value13" value="5" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value14" value="6" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value15" value="-" onclick="atualizarOperacao(this)" /></td>
         </tr>
         <tr>
-            <td><input type="button" class="button" value="0" onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="." onclick="atualizarDisplay(this)" /></td>
-            <td><input type="button" class="button" value="=" onclick="calcularOperacao()" /></td>
-            <td><input type="button" class="button" value="+" onclick="atualizarOperacao(this)" /></td>
+            <td><input type="button" class="button" id="value16" value="1" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value17" value="2" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value18" value="3" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value19" value="+" onclick="atualizarOperacao(this)" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="button" id="value20" value="0" onclick="atualizarDisplay(this)" /></td>
+            <td><input type="button" class="button" id="value21" value="=" onclick="calcularOperacao()" /></td>
         </tr>
     </table>
 

@@ -1,12 +1,14 @@
+
+
 function atualizarDisplay(btn){
     const display = document.getElementById('display');
     if(display.value.length === 15  ) return;
-    if(display.value === '0') display.value = btn.value;
+    if(display.value === '') display.value = btn.value;
     else display.value += btn.value;
 }
 
 function limparDisplay(){
-    document.getElementById('display').value = '0';
+    document.getElementById('display').value = '';
 }
 
 var operador = ''
@@ -21,11 +23,13 @@ function atualizarOperacao(btn){
 function calcularOperacao(){
     const display = document.getElementById('display');
     const valor2 = parseFloat(display.value);
-        if(operador != "%"){
+        if(operador != "√"){
+            display.value = display.value.replace("^", "**")
             valor1 = eval(display.value);
             display.value = valor1;
             operador = '';
         }else{
+            display.value = display.value.replace("√", "")
             valor1 = Math.sqrt(display.value);
             display.value = valor1;
             operador = '';
